@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CampusLog – 大学内情報共有アプリ
 
-## Getting Started
+## 📌 概要
 
-First, run the development server:
+**CampusLog** は、大学内での授業ノート・試験情報・過去問などを効率的に共有することを目的とした情報共有アプリです。既存のツールでは十分に機能を果たしていないと感じたことから、自ら設計・開発を開始しました。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ 技術スタック
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| 項目           | 使用技術                            |
+| -------------- | ----------------------------------- |
+| フロントエンド | Next.js (App Router)                |
+| バックエンド   | Supabase（Auth・Database・Storage） |
+| UI デザイン    | Tailwind CSS                        |
+| デプロイ       | Vercel                              |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 機能概要（開発中）
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [x] 投稿フォームの実装
+- [x] 投稿リストの表示
+- [ ] 検索機能の追加（開発予定）
+- [ ] ページネーションの導入（開発予定）
+- [ ] ファイル添付機能（検討中）
 
-## Learn More
+## 🎯 開発の背景と目的
 
-To learn more about Next.js, take a look at the following resources:
+本学では、授業や試験に関する情報の共有が不十分であり、学生同士の効率的な学習支援が妨げられていると感じています。Slack や LINE などの既存ツールでは情報が流れてしまい、必要な情報が見つけづらいことが課題でした。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+本アプリでは、「匿名性」「整理性」「簡易性」を重視し、学生が必要な情報をすぐに見つけ、投稿できる仕組みを目指しています。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💡 特徴と工夫
 
-## Deploy on Vercel
+- 投稿画面は直感的な UI を重視し、Tailwind CSS でシンプルかつ操作しやすい設計。
+- Supabase の Auth を利用し、大学メールでのログイン制限も今後導入予定。
+- Vercel へのデプロイを通して、実機での動作確認を反映した反復的な改善を実施。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 今後の開発予定
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ユーザーごとの投稿履歴管理
+- 投稿のタグ分類とフィルター機能
+- モバイル対応の UI 最適化
+- 管理者機能（不適切な投稿の非表示など）
+
+## 📎 リポジトリ
+
+GitHub リポジトリはこちら：  
+👉 [https://github.com/yu531deve/CampusLog](https://github.com/yu531deve/CampusLog)
